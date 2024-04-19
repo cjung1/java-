@@ -1,0 +1,15 @@
+package tech7;
+
+public class bai1 {
+	public  static void main (String[]args) {
+	int a = 100;
+	int b = 20;
+	System.out.println(a>=b);
+	System.out.println(Math.pow(a,5));
+	System.out.println(Math.max(a,b));
+	float c = (float)3.1453;
+	System.out.println(Math.ceil(c));
+	System.out.println(Math.round(c));
+	System.out.println(Math.floor(c));
+	}
+}
