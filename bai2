@@ -1,4 +1,4 @@
-
+bai1
 package tech7;
 import java.util.Scanner;
 public class b2p2 {
@@ -14,3 +14,196 @@ public static void main(String []args) {
 }
 
 }
+bai2
+package tech7;
+import java.util.Scanner;
+
+public class b2p2_2 {
+public static void main(String[]args) {
+	Scanner e = new Scanner(System.in);
+	int a = e.nextInt();
+	// cau 1
+	System.out.println("cau 1 ");
+	if(a%2==0) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 2
+	System.out.println("cau 2 ");
+	if(a%3==0&&a%5==0) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 3
+	System.out.println("cau 3 ");
+	if(a%3==0&&a%7!=0) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 4 
+	System.out.println("cau 4 ");
+	if(a%3==0||a%7==0) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 5
+	System.out.println("cau 5 ");
+	if(a>30&&a<50) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 6
+	System.out.println("cau 6 ");
+	if(a>=30) {
+		if(a%2==0||a%3==0) {
+			System.out.println("YES");
+		}
+		else if(a%5==0) {
+			System.out.println("YES");
+		}
+		else {
+			System.out.println("NO");
+		}
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 7 
+	System.out.println("cau 7 ");
+	/*int g = 1;
+	int c = a%100;
+	double d = Math.sqrt(c);
+	int f = (int)d;
+	// System.out.println("f la "+ f);
+	for(int i = 2;i<=f;i++) {
+		if(c%i==0) {
+			System.out.println("NO");
+			g = 0;
+			break;
+		}
+	}
+	if(g == 1) {
+		System.out.println("YES");
+	}*/
+	int c = a%10;
+	if(a>=10&&a<=99) {
+		if(c==2||c==3||c==5||c==7) {
+			System.out.println("YES");
+		}
+		else {
+			System.out.println("NO");
+		}
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 8
+	System.out.println("cau 8 ");
+	if(a<=100&&a%23 ==0) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 9
+	System.out.println("cau 9 ");
+	if(a>20||a<10) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+	// cau 10
+	System.out.println("cau 10 ");
+	int b = a%10;
+	if(b%3==0) {
+		System.out.println("YES");
+	}
+	else {
+		System.out.println("NO");
+	}
+}
+}
+bai3
+package tech7;
+import java.util.Scanner;
+public class b2p2_3 {
+	public static void main(String[]args) {
+Scanner c = new Scanner(System.in);
+int a = c.nextInt();
+int b = c.nextInt();
+if(b>0) {
+if(a==1||a==3||a==5||a==7||a==8||a==10||a==12) {
+	System.out.println("31");
+}
+else if(a==2) {
+	if(b%400==0||(b%4==0&&b%100!=0)) {
+	System.out.println("29");
+	}
+	else {
+		System.out.println("28");
+	}
+}
+else {
+	System.out.println("30");
+}
+	}
+else {
+	System.out.println("invalid");
+}
+	}
+}
+bai4
+package tech7;
+import java.util.Scanner;
+public class b2p2_4 {
+public static void main(String[] args) {
+	Scanner t = new Scanner(System.in);
+	double a = t.nextDouble();
+	double b = t.nextDouble();
+	double c = t.nextDouble();
+	double d = t.nextDouble();
+	double k = 1.0*(a+b+2*c+3*d)/1.0*7;
+	
+	if(k>=8) {
+		System.out.println("gioi");
+	}
+	else if(k>=6.5/*&&k<8*/) {
+		System.out.println("kha");
+	}
+	else if(/*k<6.5&&*/k>=5) {
+		System.out.println("trungbinh");
+	}
+	else {
+		System.out.println("yeu");
+	}
+}
+}
+bai5
+package tech7;
+import java.util.Scanner;
+public class b2p2_5 {
+	public static void main(String []args) {
+char a = 6;
+char b = 'A';
+b += 32;
+b-=32;
+System.out.println(a);
+System.out.println(b);
+Scanner c = new Scanner(System.in);
+char m = c.next().charAt(0);
+m+=32;
+System.out.println(m);
+	}
+}
+
